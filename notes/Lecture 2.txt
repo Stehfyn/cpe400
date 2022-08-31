@@ -1,0 +1,153 @@
+ipv4 - 32 bits -255.255.255.255
+ipv6 - 48 bit - 
+mac - 48 bit address b0,f6,a5.e3.f9.e1
+
+iso layer
+
+
+PACKET SWITCHING
+link layer===========
+hubs (earlier) -> switches (layer)
+no buffering, data collision (hubs), simplex(one channel)
+port buffering, bi-directional (duplex, in and out simultaneously into a port) talk and listen at same time
+
+wireless is simplex communication, as it needs to filter,
+psuedo duplex when using two different bandwidths
+
+network layer===========
+routers (even smarter)
+prepares packets to reduce latency and increase throughput, finds the right direction
+
+COMMUNICATION LINKS
+fiber, copper, radio, satellite
+transmission rate (bandwidth)
+bandiwidth bounds:
+-loss
+-delay
+-throughput
+
+network components:
+-devices
+-relays
+-links
+
+Business view:
+-network of interconnected ISPs
+
+ISP type:
+-3rd tier (layer3) subsidiary provider
+-2nd tier(layer2) intermediary provider
+-1st tier(layer1) Core provider
+
+method - IEEE standard:
+Wifi (802.11)
+Ethernet(CAT3)
+Bluetooth(802.15)
+
+google search ("http rfc")
+google search ("tcp rfc")
+
+standards:
+IEEE
+IETF task force
+RFC
+
+RFC contains:
+implementation
+execution
+standard
+
+hardware view
+service view, isp relationship to tiers, programming interface, their infra (client server, accepts connection over a well known port)
+coverage sclae view: lan coverage, wireless signal coverage, satellite coverage
+communication type view: wireless, bluetooth
+operational view:  protocols
+
+port (is a gate in our computer through which things get exchanged)
+-16 bit field (0-65535)
+
+programming interface:
+hooks-allow apps to connect i.e. use transport service
+
+coverage scale:
+LAN (local area) 10-1,000m
+PAN (personal area) 1- 10, 30m
+MAN (metropolitan) 1-100km
+WAN (wide area) 100-1000km
+Global (internet) 10,000km
+
+
+MAN uses shared buses
+-algorithms to manage collision (simultaneous communication) Uses more battery, delay, less throughput
+
+batch ("tracert google.com")
+sends 3 UDP packets
+similar to ping google.com
+but replies packet hop info
+
+ping (RTT) 
+
+UNR
+-1287 access points
+-internet2
+
+communication types:
+-unicasting
+-broadcasting
+-multicasting
+
+single target transmit
+indiscrminant transmit
+semi-discriminant transmit
+
+communication protocol:
+-the rules of transmit, reception
+
+protocols define:
+-date format
+-order of msgs
+-actions taken on transmission, receipt
+
+millions, billions of components:
+-hosts
+-routers
+-access networks
+-physical links
+
+How to manage such vast amount of components?
+Divide functionalities among multiple layers, defined in the 5 layers in the internet protocol stack (TCP/IP stack)
+
+-application (includes presentation and session layer)
+	-support host/net apps
+	-email, ftp, http
+-transport
+	-process-process data transfer
+	-tcp, udp
+-network
+	-routing of packets from src<->destination
+	-ip address, routing protocols
+-link
+	-data transfer between neighboring elements
+	-ethernet, wifi, lte
+-physical
+	-bits "on the wire"
+ 
+Advantage of layering?
+	1. Reduce the design complexity
+
+Encapsulation/Decapsulation
+Messages->Segements->Datagrams->Frames (Encapsulation)
+
+Server side port
+HTTP: 80
+DNS: 53
+SMTP: 25
+FTP: 20, 21
+
+transport: ports info
+network: ips addr
+link: mac addr, next mac
+physical: packet transmit
+
+routers strip network layer and add new packet header with direction info
+replies from destination-> protocol dependent

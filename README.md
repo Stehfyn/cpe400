@@ -1,2 +1,2 @@
-# cs400
-Computer Communication Networks
+# cpe400
+## Computer Communication Networks
