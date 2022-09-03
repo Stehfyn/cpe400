@@ -1,3 +1,4 @@
+8/31/22 - 01:00:00 P.M.
 ipv4 - 32 bits -255.255.255.255
 ipv6 - 48 bit - 
 mac - 48 bit address b0,f6,a5.e3.f9.e1
