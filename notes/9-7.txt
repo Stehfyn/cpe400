@@ -1,0 +1,65 @@
+12:53 PM 9/7/2022
+
+Network edge:
+clients<->servers
+
+servers:
+data centers or someone's garage
+
+Access networks:
+wired, wireless communication links
+
+Network core:
+interconnected routers
+network of networks
+
+tcp udp = transport
+
+all other protocols are application
+
+address resolution protocol = link layer
+
+network acts like a set of vertices of a graph
+modeled complete connected graph
+O(n^2), does not scale
+solution?
+
+layers of service based in core ISPs
+still not the solution to prevent monopolization
+
+layers of multiple core ISPs, connected by internet exchange points by non profit organization
+
+google(tier 1, tier2, IXP)
+
+IXP=peering linkes
+
+regional ISP used to reduce complexity in vertices
+
+NAT network address translation, network layer
+NAT routers responsible for packet mangling
+
+Content provider networks:
+
+
+
+192.168.1.x = 256 devices = 2^8
+
+10.x.x.x = 2^24 devicesUNR = 18000 to 30000 individual ips
+
+
+tier2, tier3 don't talk to another
+
+TTL is used for an attempt at preemptiveness
+decrement some value, hits 0, QoS, current router discards
+
+tracert takes advantage of ttl, 0 gives error response to source.
+
+Performance:
+packet loss avg, ethernet 10^-12
+wireless 10^-6
+
+configure NIC
+
+promiscuousness compliance
+
+
