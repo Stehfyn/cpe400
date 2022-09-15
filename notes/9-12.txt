@@ -1,0 +1,137 @@
+1:02 PM 9/12/2022
+
+Insider attack:
+jurassic park
+matrix
+sword fish
+office space
+
+"Human in the loop"
+
+Security
+The state of well-being of information and infrastructure in which the possibility of malintent  or disruption of info/services is kept low or tolerable
+
+Network Security:
+	design of architectures
+	how baddies can attack
+	how we can defend
+
+internet usually designed with security in mind
+protocol designers play catch up
+
+
+Security primitives: (how a secure channel is created)
+	no one algorithm in which all 6 are vulnerable
+	Alice/bob everything that isn't malware or an intruder
+	
+	Alice's Online Bak( CIA ) 
+		Prevent Trudy from seeing Bob's balance
+			Confidentiality(prevent unauth reading) | Encryption protocols
+		
+		Trudy must not be able to change Bob's balance
+		Bob must no be able to improperly change his own balance
+			Integrity(prevent unauth writing) | Hashing?
+
+		AOB's information must be available when needed
+			Availability (data is available in a timely manner when needed)
+				Denial of Service is prominent, as there's no algorithm or pattern against
+		
+	
+		===========================================================
+
+		How does bob's computer know that bob is really bob and trudy
+		when bob logs into aob. how does aob know bob
+			Authentication(assurance that other party is the claimed one)
+	
+		Bob can't view someone else's account
+		or install new software
+			Authorization (allowing access only to permitted resources)
+		
+		Bob can't deny a transaction he requested
+		"no takebacks"
+			Non-repudiation (protection against denial by one of the parties in a communication)
+
+
+SHA 256
+key for hashinh
+
+authentication and authorization
+
+
+Threats and attacks
+
+threat(possibility)
+	vulnerability
+	flaw
+
+attack(execution)
+	active vs.passive
+
+Security services are designed to prevent, detect, or recover from a security attacl
+	Firewall, IDS, Digital Forensics
+
+Security at rest
+Security in transit
+	must be maintained from both sides
+
+
+Attacker potential
+
+malware, spyware, virus or worms
+botnet for dos
+dns attack
+
+packet sniffing
+	broadcast mesia
+	promiscuous network interfaces
+ip sniffing
+	
+
+Firewall (first line of defense)
+	separate local network from internet
+	
+
+	techniques
+		service control: determination of service type
+		direction control: properly allowed or blocked/inbound our outbound, conditionally accessed
+		
+		User control: Control access to a service based on user
+			typically applied to users inside the firewall
+		behavior control: behavior of serrvices
+
+	Firewall needs to exist between trusted and untrusted networks
+	Internal networks have additional layers of firewalls
+	on user end machines
+	layering of firewalls
+
+	internal DMZ networks, basically a buffer of computation for negotiation
+	Distributed firewall configurations
+	
+
+Intrustion Detection Systems (IDS) 2nd line of defence
+	incredibly specific targeted monitoring, and is aware of instrinsic network topology
+	
+
+	Methods:
+		Statistical anomaly detection
+			statistically model and define proper behavior
+			define suspicious and unsuspicious behavior
+			
+			correlation testing
+			regression testing
+			automation used to patch a firewall breach, as opposed to intense, laborious multi-organization collaboration
+		Rule-based detection
+			Rule-set laws
+
+Honeypot (inverse security)
+	takes advantages of an attacker leaning towards taking the first route they see inside
+	
+with the advent of data analysis through machine learning, honeypots and 
+adversarial networks towards directing output to automatically path first line of defense threat analysis, threat intelligence exchange.
+if a process can be taught, then a process can be untaught
+
+summary:
+
+
+project discussion:
+
