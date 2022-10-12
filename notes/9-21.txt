@@ -1,0 +1,22 @@
+12:58 PM 9/21/2022
+Monday, 9/26 Application Layer(HTTP/DNS)
+DNS
+Domain Name<->IP Address
+No data, just a database map
+DNS Lookup.->IP, then TCP connection begins-> handshake->processes connected->applications begin communication
+(Distributed database)
+Implemented as a hieracrhy of many name servers
+
+hostname to IP translation, host aliasing
+Amazon DNS Server for specific hostname aliasing
+hostname servers may be redundant images of one master
+
+type A is by default
+-type=NS by command option
+
+nslookup
+authoritative dns query is not efficient as tld does not cache authoritative dns lookups
+
+
+
+

@@ -1,0 +1,58 @@
+1:16 PM 10/10/2022
+
+TCP Congestion Control:
+TCP Reno <-> TCP Tahoe
+1. Timeout	1. Timeour
+2. Triple Duplicate Acknowledgements
+
+TCP New Reno
+TCP Congestion Control is top 10 networking problem
+is integration of tahoe and reno
+
+TCP Tahoe
+1. cwnd hits ss threshold...additive increase..., then cwnd := 1, threshold = cwnd/2
+
+TCP Reno
+TCP Congestion control: Sawtooth recovery pattern
+
+Initial ss threshold = 14
+First loss occurrence = 9 transmission phases
+what is the next cwnd and ssthreshold at 10th phase
+
+
+ss = 14
+1: 1, 2: 2, 3: 4, 4: 8, 5: 14, 6: 15, 7:16, 8:17, 9:18 ==> 18/2 --> 9
+cwnd = 1. ss transmission window = 18/2
+
+Initial ss threshold = 17
+cwnd := 1
+loss occurs after 6 transmissions, detected by 3 dupacks. ==> TCP Reno
+What is the next cwnd and ss threshold?
+After 4 more transmissions again loss occurs, detcted by timeout, what is the next cwnd and ss threshold?
+
+1 2 4 8 16 17 ==> floor(17/2) ==> 8, cwnd, ss ==> 8
+8 9 10 11 ==> floor(11/5) ==> 5, cwnd ==> 1, ss ==> 5, cwnd is 1 because it was detected by timeout
+
+Restart:
+TCP Tahoe, slow start again
+TCP Reno, additive increase
+
+congestion "do not clog the pipe"
+flow control "do not overwhelm the receiving buffer"
+
+TCP Flow Control:
+16-bit field of TCP Segment structure, ==> receiver window size, (how much that buffer is free)
+
+
+we use UDP for speed, research, and diagnostics (control communication)
+DNS over UDP
+
+minimum header size:
+UDP: 8 bytes, 2 32 bit segments
+TCP: 20 bytes: 5 32 bit segments
+
+
+5 properties reliability
+checksum
+acknowledgement
+pipelining

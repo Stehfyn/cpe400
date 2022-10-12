@@ -1,0 +1,51 @@
+1:09 PM 10/12/2022
+
+Midterm Review: Practice Problems:
+alpha standard is 0.125
+
+EstimatedRTT(.25) = 59
+Timeout (0.25) = 79
+
+7 14 21 22 23 24
+cwnd = 12, ss threshold = 12
+ss threshold = 7, cwnd = 1
+
+l/r = 1000/5000 = .2s
+,8
+
+generalized:
+(.2 * n-1 )+ .4
+
+l/r * h + l/r * (h-1)
+
+a)routing
+c).application layer
+
+2|network comgestion, router buffer full,  checksum, , c). alpha close to 1 when high consistent fluctuations, small alpha when things are stable keep it close to convergence
+3|a). packet sniffing, learning through analysis, experimental purpose,  b).promiscuous mode means a computer will accept a packet regardless if its the intended target, then passes it on c).
+technology adv: network research and learning disadv: knowledge can be misused
+legal adv: network forensics disadv: surveillance, lack of non-repudiation
+ethics adv: optimize network performance disadv: personal privacy
+4|practice at home
+5|practice at home
+
+FTP| SMTP
+Serviced by TCP, as that favors data integrity
+http: port 90
+dns port 53
+smtp 55
+ftp 20 and 21
+21 is control connection
+20 is data conenction
+this is referred to out of bounds communication
+two seperate channels
+chat systems historically irc 
+now realtime messaging ??
+
+e;ectronic mail 
+SMTP
+POP3
+IMAP
+
+gmail
+http

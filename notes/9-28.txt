@@ -1,0 +1,35 @@
+1:01 PM 9/28/2022
+transfer layer
+rdt
+reliable data transfer'
+
+3 scenarios triggering timeout
+-packet loss
+-acknoledgement loss
+-packet delay
+
+
+\Selective Repeat:
+window size <= half of the max sequence number
+
+RDT Mechanisms:
+Acknowledgement
+Timer
+Sequence Number
+Pipelining
+Checksum
+
+
+TCP
+Sequence number is the index of the first byte of it is packet
+acknowledgement number response is the index of the next byte in the stream, next byte in the stream is the highest priority byte yet to be received
+Response of TCP is capable of cumulative Ack, multiple sends mapped to one response
+NextTCP bytestream size is determined by ack number and receiver window buffer that indicates the emptiness of the receiver buffer
+
+TCP 6 flags in TCP bytestream attacker/defender
+S-sin flag, only first pakcet will have sin flag set
+F-fin flag, end communication in a gracious way
+R-Hard kill, resest flag
+A-acknowledgment flag
+U-Argent flag
+P-Push, like force send asap

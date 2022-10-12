@@ -1,0 +1,71 @@
+1:10 PM 9/19/2022
+
+NCR login accessible thru NETID
+connect to virtual machine
+two vms per student
+don't shutdown the virtual machine
+neglect memory issues
+Attacker suite, Kali linux
+Use eth1 network adapter
+eth0 external | eth1 (192.168.1.1 ) (server) internal
+
+Ch2 - Application Layer
+HTTP(TCP)/DNS(UDP)/SMTP/FTP/RTP
+Applications connecting to other Applications (End-to-End or Logical Communication)
+What happens here?
+-Message design
+	-Field design and layout
+	-Semantics
+	-Rules
+What transport service does an app need?
+First, Requirements:
+	-data integrity
+	-timing
+	-throughput
+
+TCP
+	-reliable transport
+	-flow control
+	-congestion control
+	-connection-oriented
+	-does not provide:
+		-timing
+		-minimum throughput guarantee
+		-security
+
+UDP
+	-unrelaible data transfer
+	-does not provide;
+		-reliability
+		-flow control
+		-congestion control
+		-timing
+		-throughput guarantee
+		-security
+		-orconecction setup
+
+email SMTP[RFC 2821] TCP
+remote terminal access Telnet[RFC 854] TCP
+Web HTTP [RFC 2616] TCP
+file transfer [RFC 959] TCP
+streaming multimedia HTTP/RTP[RFC 1889] TCP or UDP
+internet telephony SIP RTP, proprietary TCP or UDP
+
+kali linux ping is udp
+SSL becomes intermediary layer in HTTPS, encrypted communication
+
+HTTP
+	1.0 (non-persistent)
+		GET
+		POST
+		HEAD
+
+	1.1 (persistent)
+		GET
+		POST
+		HEAD
+		PUT
+		DELETE
+nmap 
+
+UDP is generally banned from interorganizational communication, but inter-organization due to its manageability 
