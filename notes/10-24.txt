@@ -1,0 +1,82 @@
+12:52 PM 10/24/2022
+
+Networking Semester Project - Lecture 4 - Module 1
+
+#of hosts( 2^24)-2class a
+minus 2 is because of reserved control ip addresses
+x.0.0.0 (id of subnet)
+x.255.255.255 (id of broadcast address)
+
+class a 			1.0.0.0 
+class b 			128.0.0.0
+class c 			192.0.0.0
+class d multicasting 	234.0.0.0
+class e experimental 	240.0.0.0
+
+q1. 200 hosts, what class to use?
+class c, we need to optimize ip reuse, (2^8)-12253 hosts available
+
+q2. 1000 hosts, what class to use?
+class b, we need to optimize ip reuse, (2^16)-2 65534 hosts available
+
+first
+classful addressing (still use implicitly, because the resulting CIDR is still in some class range)
+
+next
+CIDR
+classless Inter domain routing (we use explicitly) (not fixed slider, reduces wasting of ips in 32 bit range)
+-subnet portion of address is arbitrary length
+-address format is a.b.c.d/x where x is # of bits in subnet portion of address
+
+200.23.16.0/23
+subnet part			host part
+11001000 00010111 0001 000|0 00000000
+
+(2^9) -2 = 510 hosts available
+
+q2.revisited: use (2^10)
+(2^10)-2 = 1022
+network mask is: /22(netmask)
+
+net vs. subnet
+
+gateway into network. network can have multiple subnest with their own gateways, and interconnected.
+each subnet needs a subnet mask
+subnet masks need to be higher than parent network mask
+
+cmd:
+ipconfig /all
+
+bgp ->supernetting subnetting
+
+
+ip address reuse:
+dhcp and nat
+
+dynamic host configuration protocol
+-dynamically get address from server, assigned and has a lease time
+-dhcp server keeps track of used ips and whats available
+-dhcp uses udp over ip over ether, application layer protocol. Facilitates network layer
+
+dhcp uses 4-way handshake
+-discover
+-offer
+-request
+-ack
+
+subnet calculator
+
+
+
+
+home router is link layer switch
+network gateway
+and is dhcp server
+
+bssid: individual accesspoint
+essid: unifies accesspoint through mask.
+uses singular backbone communication to retrieve ips from dhcp server
+
+
+
+
